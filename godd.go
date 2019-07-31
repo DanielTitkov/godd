@@ -56,7 +56,7 @@ func copyFile(inpPath, outpPath string, bufSize int) error {
 			return err
 		}
 
-		if doneLength = doneLength + int64(n); (doneLength % 100) == 0 {
+		if doneLength += int64(n); (doneLength % 100) == 0 {
 			donePercent := int(float64(doneLength) / float64(inpLength) * 100)
 			fmt.Printf("\rCopying.. %v%%", donePercent)
 		}

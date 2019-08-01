@@ -26,7 +26,7 @@ If you don't have golangci-lint installed.
 
 ### Install godd
 
-Note the before intallation tests and linters will be employed.
+Note that before intallation tests and linters will be employed.
 
 `make install`
 
